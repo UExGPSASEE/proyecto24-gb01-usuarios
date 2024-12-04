@@ -1,6 +1,6 @@
-package es.unex.asee.gb01.contents.mappers;
+package es.unex.asee.gb01.contents.Mappers;
 
-import es.unex.asee.gb01.contents.entities.LanguageEntity;
+import es.unex.asee.gb01.contents.Entities.LanguageEntity;
 import es.unex.swagger.model.Language;
 import org.springframework.stereotype.Component;
 

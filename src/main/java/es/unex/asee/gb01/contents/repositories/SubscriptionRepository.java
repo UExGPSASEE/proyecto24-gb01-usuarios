@@ -3,7 +3,7 @@ package es.unex.asee.gb01.contents.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import es.unex.asee.gb01.contents.entities.SubscriptionEntity;
+import es.unex.asee.gb01.contents.Entities.SubscriptionEntity;
 
 @Repository
 public interface SubscriptionRepository extends JpaRepository<SubscriptionEntity, Long> {

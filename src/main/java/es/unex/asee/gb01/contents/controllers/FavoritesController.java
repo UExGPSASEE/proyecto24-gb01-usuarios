@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.unex.asee.gb01.contents.entities.FavoriteEntity;
+import es.unex.asee.gb01.contents.Entities.FavoriteEntity;
 import es.unex.asee.gb01.contents.repositories.FavoritesRepository;
 import es.unex.asee.gb01.contents.services.FavoriteService;
 

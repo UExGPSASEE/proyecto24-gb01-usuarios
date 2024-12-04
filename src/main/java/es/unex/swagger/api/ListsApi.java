@@ -45,9 +45,9 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "204", description = "Operación exitosa."),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Content no encontrada") })
 //     @RequestMapping(value = "/lists/{idList}/contents/{idContent}",
 //         method = RequestMethod.DELETE)
@@ -64,9 +64,9 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ListaContent.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Lista no encontrada") })
 //     @RequestMapping(value = "/lists/{idList}",
 //         produces = { "application/json", "application/xml" }, 
@@ -83,9 +83,9 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa."),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Lista o content no encontrado") })
 //     @RequestMapping(value = "/lists/{idList}/contents/{idContent}",
 //         method = RequestMethod.GET)
@@ -101,9 +101,9 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa.", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = HttpsappSwaggerhubComapisdmocinhamedifliContent100swaggerYamlcomponentsschemasMoviepropertiesid.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Lista no encontrada") })
 //     @RequestMapping(value = "/lists/{idList}/contents",
 //         produces = { "application/json", "application/xml" }, 
@@ -120,9 +120,9 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ListaContent.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Lista no encontrada") })
 //     @RequestMapping(value = "/lists/{idList}",
 //         produces = { "application/json", "application/xml" }, 
@@ -139,9 +139,9 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = ListaContent.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Listas no encontradas") })
 //     @RequestMapping(value = "/lists",
 //         produces = { "application/json", "application/xml" }, 
@@ -156,9 +156,9 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "201", description = "Operación exitosa."),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Lista no encontrada") })
 //     @RequestMapping(value = "/lists/{idList}/contents",
 //         consumes = { "application/json", "application/xml", "application/x-www-form-urlencoded" }, 
@@ -175,7 +175,7 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = ListaContent.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado") })
 //     @RequestMapping(value = "/lists",
 //         produces = { "application/json", "application/xml" }, 
@@ -192,9 +192,9 @@
 // "read:users"        })    }, tags={ "lists" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa."),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Lista no encontrada") })
 //     @RequestMapping(value = "/lists/{idList}/contents",
 //         consumes = { "application/json", "application/xml" }, 

@@ -1,7 +1,8 @@
-package es.unex.asee.gb01.contents.mappers;
+package es.unex.asee.gb01.contents.Mappers;
 
-import es.unex.asee.gb01.contents.entities.UserEntity;
-import es.unex.asee.gb01.contents.entities.UserProfileEntity;
+import es.unex.asee.gb01.contents.Mappers.UserProfileMapper;
+import es.unex.asee.gb01.contents.Entities.UserEntity;
+import es.unex.asee.gb01.contents.Entities.UserProfileEntity;
 import es.unex.swagger.model.User;
 import es.unex.swagger.model.UserLogIn;
 

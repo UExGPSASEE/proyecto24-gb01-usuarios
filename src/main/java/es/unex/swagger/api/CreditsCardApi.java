@@ -44,9 +44,9 @@
 // "read:users"        })    }, tags={ "creditCard" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa."),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "User o profile de user no encontrado") })
 //     @RequestMapping(value = "/creditsCard",
 //         consumes = { "application/json", "application/xml" }, 
@@ -63,9 +63,9 @@
 // "read:users"        })    }, tags={ "creditCard" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = CreditCard.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "IBAN no encontrado") })
 //     @RequestMapping(value = "/creditsCard/{IBAN}",
 //         produces = { "application/json", "application/xml" }, 
@@ -81,9 +81,9 @@
 // "read:users"        })    }, tags={ "creditCard" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = CreditCard.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "IBAN no encontrado") })
 //     @RequestMapping(value = "/creditsCard/{IBAN}",
 //         produces = { "application/json", "application/xml" }, 
@@ -99,9 +99,9 @@
 // "read:users"        })    }, tags={ "creditCard" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa.", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = CreditCard.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "User o profile de user no encontrado") })
 //     @RequestMapping(value = "/creditsCard",
 //         produces = { "application/json", "application/xml" }, 
@@ -116,9 +116,9 @@
 // "read:users"        })    }, tags={ "creditCard" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = CreditCard.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "IBAN no encontrado") })
 //     @RequestMapping(value = "/creditsCard/{IBAN}",
 //         produces = { "application/json", "application/xml" }, 

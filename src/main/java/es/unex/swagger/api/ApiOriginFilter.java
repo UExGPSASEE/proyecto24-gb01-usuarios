@@ -1,15 +1,14 @@
 package es.unex.swagger.api;
 
-import java.io.IOException;
-
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2024-10-18T10:29:32.211856553Z[GMT]")
 public class ApiOriginFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response,
-            FilterChain chain) throws IOException, ServletException {
+                         FilterChain chain) throws IOException, ServletException {
         HttpServletResponse res = (HttpServletResponse) response;
         res.addHeader("Access-Control-Allow-Origin", "*");
         res.addHeader("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
