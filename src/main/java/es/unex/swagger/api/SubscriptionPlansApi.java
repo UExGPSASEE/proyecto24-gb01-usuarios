@@ -44,9 +44,9 @@
 // "read:users"        })    }, tags={ "subscriptionPlans" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "204", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = SubscriptionType.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Plan de subscription no encontrado") })
 //     @RequestMapping(value = "/subscriptionPlans/{idSubscriptionPlan}",
 //         produces = { "application/json", "application/xml", "application/x-www-form-urlencoded" }, 
@@ -62,9 +62,9 @@
 // "read:users"        })    }, tags={ "subscriptionPlans" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = SubscriptionType.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Lista de subscriptiones no encontrado") })
 //     @RequestMapping(value = "/subscriptionPlans",
 //         produces = { "application/json", "application/xml" }, 
@@ -79,9 +79,9 @@
 // "read:users"        })    }, tags={ "subscriptionPlans" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = SubscriptionType.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Plan de subscription no encontrado") })
 //     @RequestMapping(value = "/subscriptionPlans/{idSubscriptionPlan}",
 //         produces = { "application/json", "application/xml", "application/x-www-form-urlencoded" }, 
@@ -97,9 +97,9 @@
 // "read:users"        })    }, tags={ "subscriptionPlans" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "201", description = "Operación exitosa", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = SubscriptionType.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Lista de subscriptiones no encontrado") })
 //     @RequestMapping(value = "/subscriptionPlans",
 //         produces = { "application/json", "application/xml" }, 
@@ -116,9 +116,9 @@
 // "read:users"        })    }, tags={ "subscriptionPlans" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "201", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = SubscriptionType.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Plan de subscription no encontrado") })
 //     @RequestMapping(value = "/subscriptionPlans/{idSubscriptionPlan}",
 //         produces = { "application/json", "application/xml", "application/x-www-form-urlencoded" }, 

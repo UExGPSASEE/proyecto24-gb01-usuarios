@@ -45,9 +45,9 @@
 // "read:users"        })    }, tags={ "seeLater" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "204", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = WatchLater.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "User no encontrado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Valor no soportado") })
 //     @RequestMapping(value = "/seeLater/{idContent}",
 //         produces = { "application/json", "application/xml", "application/x-www-form-urlencoded" }, 
@@ -64,9 +64,9 @@
 // "read:users"        })    }, tags={ "seeLater" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = WatchLater.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "User no encontrado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Valor no soportado") })
 //     @RequestMapping(value = "/seeLater/{idContent}",
 //         produces = { "application/json", "application/xml" }, 
@@ -83,9 +83,9 @@
 // "read:users"        })    }, tags={ "seeLater" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = WatchLater.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "User no encontrado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Valor no soportado") })
 //     @RequestMapping(value = "/seeLater",
 //         produces = { "application/json", "application/xml" }, 

@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import es.unex.asee.gb01.contents.entities.FavoriteEntity;
+import es.unex.asee.gb01.contents.Entities.FavoriteEntity;
 
 @Repository
 public interface FavoritesRepository extends JpaRepository<FavoriteEntity, Long> {

@@ -1,4 +1,5 @@
 package es.unex.swagger.api;
+
 import javax.xml.bind.annotation.XmlTransient;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2024-10-18T10:29:32.211856553Z[GMT]")
@@ -14,29 +15,30 @@ public class ApiResponseMessage {
     String type;
     String message;
 
-    public ApiResponseMessage(){}
+    public ApiResponseMessage() {
+    }
 
-    public ApiResponseMessage(int code, String message){
+    public ApiResponseMessage(int code, String message) {
         this.code = code;
-        switch(code){
-        case ERROR:
-            setType("error");
-            break;
-        case WARNING:
-            setType("warning");
-            break;
-        case INFO:
-            setType("info");
-            break;
-        case OK:
-            setType("ok");
-            break;
-        case TOO_BUSY:
-            setType("too busy");
-            break;
-        default:
-            setType("unknown");
-            break;
+        switch (code) {
+            case ERROR:
+                setType("error");
+                break;
+            case WARNING:
+                setType("warning");
+                break;
+            case INFO:
+                setType("info");
+                break;
+            case OK:
+                setType("ok");
+                break;
+            case TOO_BUSY:
+                setType("too busy");
+                break;
+            default:
+                setType("unknown");
+                break;
         }
         this.message = message;
     }
