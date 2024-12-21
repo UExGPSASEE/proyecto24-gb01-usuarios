@@ -1,4 +1,4 @@
-package es.unex.asee.gb01.contents.entities;
+package es.unex.asee.gb01.contents.Entities;
 import java.util.List;
 
 import javax.persistence.CascadeType;

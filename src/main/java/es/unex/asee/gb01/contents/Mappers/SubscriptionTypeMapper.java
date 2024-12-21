@@ -1,6 +1,6 @@
-package es.unex.asee.gb01.contents.mappers;
+package es.unex.asee.gb01.contents.Mappers;
 
-import es.unex.asee.gb01.contents.entities.SubscriptionTypeEntity;
+import es.unex.asee.gb01.contents.Entities.SubscriptionTypeEntity;
 import es.unex.swagger.model.SubscriptionType;
 import java.util.List;
 import java.util.stream.Collectors;

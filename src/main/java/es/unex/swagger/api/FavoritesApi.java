@@ -45,9 +45,9 @@
 // "read:users"        })    }, tags={ "favorites" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "204", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Favorites.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "User no encontrado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Valor no soportado") })
 //     @RequestMapping(value = "/favorites/{idContent}",
 //         produces = { "application/json", "application/xml", "application/x-www-form-urlencoded" }, 
@@ -64,9 +64,9 @@
 // "read:users"        })    }, tags={ "favorites" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = Favorites.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "User no encontrado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Valor no soportado") })
 //     @RequestMapping(value = "/favorites/{idContent}",
 //         produces = { "application/json", "application/xml" }, 
@@ -83,9 +83,9 @@
 // "read:users"        })    }, tags={ "favorites" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = Favorites.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "User no encontrado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Valor no soportado") })
 //     @RequestMapping(value = "/favorites",
 //         produces = { "application/json", "application/xml" }, 
@@ -101,9 +101,9 @@
 // "read:users"        })    }, tags={ "favorites" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "201", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Favorites.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Favorito no encontrado.") })
 //     @RequestMapping(value = "/favorites/{idContent}",
 //         produces = { "application/json", "application/xml" }, 
@@ -120,9 +120,9 @@
 // "read:users"        })    }, tags={ "favorites" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "201", description = "Operación exitosa", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Favorites.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Favorito no encontrado.") })
 //     @RequestMapping(value = "/favorites",
 //         produces = { "application/json", "application/xml" }, 

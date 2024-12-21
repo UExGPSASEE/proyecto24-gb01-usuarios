@@ -44,9 +44,9 @@
 // "read:users"        })    }, tags={ "languages" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Language.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Language no encontrado") })
 //     @RequestMapping(value = "/languages/{idLanguage}",
 //         produces = { "application/json", "application/xml" }, 
@@ -62,9 +62,9 @@
 // "read:users"        })    }, tags={ "languages" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "OK", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = Language.class)))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "bad input parameter"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Language not found") })
 //     @RequestMapping(value = "/languages",
 //         produces = { "application/json", "application/xml", "application/x-www-form-urlencoded" }, 
@@ -79,9 +79,9 @@
 // "read:users"        })    }, tags={ "languages" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Language.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Language no encontrado") })
 //     @RequestMapping(value = "/languages/{idLanguage}",
 //         produces = { "application/json", "application/xml" }, 
@@ -96,11 +96,11 @@
 // "read:users"        })    }, tags={ "languages" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "201", description = "Operación exitosa, language añadido", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Language.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Language no encontrado"),
-        
+
 //         @ApiResponse(responseCode = "422", description = "Excepción de validación") })
 //     @RequestMapping(value = "/languages",
 //         produces = { "application/json", "application/xml" }, 
@@ -117,9 +117,9 @@
 // "read:users"        })    }, tags={ "languages" })
 //     @ApiResponses(value = { 
 //         @ApiResponse(responseCode = "200", description = "Operación exitosa.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = Language.class))),
-        
+
 //         @ApiResponse(responseCode = "400", description = "Valor no soportado"),
-        
+
 //         @ApiResponse(responseCode = "404", description = "Language no encontrado") })
 //     @RequestMapping(value = "/languages/{idLanguage}",
 //         produces = { "application/json", "application/xml" }, 

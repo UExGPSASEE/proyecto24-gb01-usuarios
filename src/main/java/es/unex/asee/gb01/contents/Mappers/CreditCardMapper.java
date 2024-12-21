@@ -1,6 +1,6 @@
-package es.unex.asee.gb01.contents.mappers;
+package es.unex.asee.gb01.contents.Mappers;
 
-import es.unex.asee.gb01.contents.entities.CreditCardEntity;
+import es.unex.asee.gb01.contents.Entities.CreditCardEntity;
 import es.unex.swagger.model.CreditCard;
 import org.springframework.stereotype.Component;
 

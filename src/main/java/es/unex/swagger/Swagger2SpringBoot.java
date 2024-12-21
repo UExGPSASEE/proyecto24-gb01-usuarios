@@ -1,8 +1,8 @@
 package es.unex.swagger;
 
 
-import es.unex.asee.gb01.contents.entities.UserEntity;
-import es.unex.asee.gb01.contents.entities.UserProfileEntity;
+import es.unex.asee.gb01.contents.Entities.UserEntity;
+import es.unex.asee.gb01.contents.Entities.UserProfileEntity;
 import es.unex.asee.gb01.contents.repositories.UserProfileRepository;
 import es.unex.asee.gb01.contents.repositories.UserRepository;
 import es.unex.swagger.Swagger2SpringBoot.ExitException;
@@ -84,6 +84,7 @@ public class Swagger2SpringBoot implements CommandLineRunner {
         List<UserProfileEntity> listaUserProfiles = new ArrayList<>();
         //Long id = Long.valueOf(1);
         listaUsers.add(new UserEntity("Sergio", "Martín", "semartinl", "semartinl@gmail.com", "12345"));
+        listaUserProfiles.add(new UserProfileEntity(1L,"Sergio","1234"));
         listaUsers.add(new UserEntity("Perico", "Martín", "pericomartin", "perico@gmail.com", "12345"));
         listaUsers.add(new UserEntity("Pablo", "Fernández", "pafergon", "pafergon@gmail.com", "12345"));
         listaUsers.add(new UserEntity("Daniel", "Mocinha", "danielmocinha", "dmocinha@alumnos.unex.es", "12345"));
@@ -91,6 +92,7 @@ public class Swagger2SpringBoot implements CommandLineRunner {
 
 
         userRepository.saveAll(listaUsers);
+        userProfileRepository.saveAll(listaUserProfiles);
 
 
 

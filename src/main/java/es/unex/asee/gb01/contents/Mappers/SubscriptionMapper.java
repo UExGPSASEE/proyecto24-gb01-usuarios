@@ -1,7 +1,7 @@
-package es.unex.asee.gb01.contents.mappers;
+package es.unex.asee.gb01.contents.Mappers;
 
 
-import es.unex.asee.gb01.contents.entities.SubscriptionEntity;
+import es.unex.asee.gb01.contents.Entities.SubscriptionEntity;
 import es.unex.swagger.model.Subscription;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
