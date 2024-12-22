@@ -53,7 +53,7 @@ public interface UsersApi {
             @ApiResponse(responseCode = "404", description = "Suscripción no encontrada")})
     @RequestMapping(value = "/users/subscriptions",
             method = RequestMethod.DELETE)
-    ResponseEntity<Void> deleteSubscriptionByUserCookie(@Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = true) User sessionUserCookie
+    ResponseEntity<Void> deleteSubscriptionByUserCookie(@Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = false) User sessionUserCookie
     );
 
 
@@ -71,7 +71,7 @@ public interface UsersApi {
     @RequestMapping(value = "/users/{idUser}",
             produces = {"application/json", "application/xml"},
             method = RequestMethod.DELETE)
-    ResponseEntity<User> deleteUserById(@Parameter(in = ParameterIn.PATH, description = "El id del user que se desea buscar.", required = true, schema = @Schema()) @PathVariable("idUser") Integer idUser
+    ResponseEntity<User> deleteUserById(@Parameter(in = ParameterIn.PATH, description = "El id del user que se desea buscar.", required = false, schema = @Schema()) @PathVariable("idUser") Integer idUser
     );
 
 
@@ -106,7 +106,7 @@ public interface UsersApi {
     @RequestMapping(value = "/users/subscriptions",
             produces = {"application/json", "application/xml", "application/x-www-form-urlencoded"},
             method = RequestMethod.GET)
-    ResponseEntity<Subscription> getSubscriptionByUserCookie(@Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = true) User sessionUserCookie
+    ResponseEntity<Subscription> getSubscriptionByUserCookie(@Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = false) User sessionUserCookie
     );
 
 
@@ -124,7 +124,7 @@ public interface UsersApi {
     @RequestMapping(value = "/users/{idUser}",
             produces = {"application/json", "application/xml"},
             method = RequestMethod.GET)
-    ResponseEntity<User> getUserById(@Parameter(in = ParameterIn.PATH, description = "El id del user que se desea buscar.", required = true, schema = @Schema()) @PathVariable("idUser") Integer idUser
+    ResponseEntity<User> getUserById(@Parameter(in = ParameterIn.PATH, description = "El id del user que se desea buscar.", required = false, schema = @Schema()) @PathVariable("idUser") Integer idUser
     );
 
     // Nuevo método que acepta datos en formato form-urlencoded
@@ -151,7 +151,7 @@ public interface UsersApi {
             produces = {"application/json", "application/xml"},
             consumes = {"application/json", "application/xml", "application/x-www-form-urlencoded"},
             method = RequestMethod.PUT)
-    ResponseEntity<User> putUserById(@Parameter(in = ParameterIn.PATH, description = "El id del user que se desea buscar.", required = true, schema = @Schema()) @PathVariable("idUser") Integer idUser, @Valid @RequestBody User body
+    ResponseEntity<User> putUserById(@Parameter(in = ParameterIn.PATH, description = "El id del user que se desea buscar.", required = false, schema = @Schema()) @PathVariable("idUser") Integer idUser, @Valid @RequestBody User body
     );
 
 
@@ -170,7 +170,7 @@ public interface UsersApi {
             produces = {"application/json", "application/xml", "application/x-www-form-urlencoded"},
             consumes = {"application/json", "application/xml", "application/x-www-form-urlencoded"},
             method = RequestMethod.PUT)
-    ResponseEntity<Subscription> updateSubscriptionByUserCookie(@Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = true) User sessionUserCookie
+    ResponseEntity<Subscription> updateSubscriptionByUserCookie(@Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = false) User sessionUserCookie
             , @Parameter(in = ParameterIn.DEFAULT, description = "", schema = @Schema()) @Valid @RequestBody Subscription body
     );
 

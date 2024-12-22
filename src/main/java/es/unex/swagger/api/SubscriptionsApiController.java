@@ -48,14 +48,14 @@ public class SubscriptionsApiController implements SubscriptionsApi {
     }
 
     public ResponseEntity<Void> deleteAllSubscriptions(
-            @Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = true) User sessionUserCookie) {
+            @Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = false) User sessionUserCookie) {
         String accept = request.getHeader("Accept");
         return new ResponseEntity<Void>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-    public ResponseEntity<Void> deleteSubscriptionByIdSubscription(@Parameter(in = ParameterIn.PATH, description = "Id de la suscripción.", required = true, schema = @Schema()) @PathVariable("idSubscription") Long idSubscription
+    public ResponseEntity<Void> deleteSubscriptionByIdSubscription(@Parameter(in = ParameterIn.PATH, description = "Id de la suscripción.", required = false, schema = @Schema()) @PathVariable("idSubscription") Long idSubscription
             ,
-                                                                   @Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "User", required = true) String sessionUserCookie) {
+                                                                   @Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "User", required = false) String sessionUserCookie) {
         String accept = request.getHeader("Accept");
 
         subscriptionRepository.deleteById(idSubscription);
@@ -77,7 +77,7 @@ public class SubscriptionsApiController implements SubscriptionsApi {
     }
 
     public ResponseEntity<Subscription> postSubscriptionByUser(
-            @Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "User", required = true) String sessionUserCookie, @Parameter(in = ParameterIn.DEFAULT, description = "", schema = @Schema()) @Valid @RequestBody Subscription body
+            @Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "User", required = false) String sessionUserCookie, @Parameter(in = ParameterIn.DEFAULT, description = "", schema = @Schema()) @Valid @RequestBody Subscription body
     ) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
@@ -102,9 +102,9 @@ public class SubscriptionsApiController implements SubscriptionsApi {
         return new ResponseEntity<Subscription>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-    public ResponseEntity<Subscription> updateSubscriptionByIdSubscription(@Parameter(in = ParameterIn.PATH, description = "Id de la suscripción.", required = true, schema = @Schema()) @PathVariable("idSubscription") Integer idSubscription
+    public ResponseEntity<Subscription> updateSubscriptionByIdSubscription(@Parameter(in = ParameterIn.PATH, description = "Id de la suscripción.", required = false, schema = @Schema()) @PathVariable("idSubscription") Integer idSubscription
             ,
-                                                                           @Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = true) User sessionUserCookie, @Parameter(in = ParameterIn.DEFAULT, description = "", schema = @Schema()) @Valid @RequestBody Subscription body
+                                                                           @Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = false) User sessionUserCookie, @Parameter(in = ParameterIn.DEFAULT, description = "", schema = @Schema()) @Valid @RequestBody Subscription body
     ) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {

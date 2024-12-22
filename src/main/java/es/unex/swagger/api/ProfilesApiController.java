@@ -41,9 +41,9 @@ public class ProfilesApiController implements ProfilesApi {
         this.request = request;
     }
 
-    public ResponseEntity<UserProfile> deleteUserProfileById(@Parameter(in = ParameterIn.PATH, description = "El id del profile de user que se desea eliminar.", required = true, schema = @Schema()) @PathVariable("idProfile") Long idProfile
+    public ResponseEntity<UserProfile> deleteUserProfileById(@Parameter(in = ParameterIn.PATH, description = "El id del profile de user que se desea eliminar.", required = false, schema = @Schema()) @PathVariable("idProfile") Long idProfile
             ,
-                                                             @Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = true) User sessionUserCookie) {
+                                                             @Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = false) User sessionUserCookie) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
@@ -61,7 +61,7 @@ public class ProfilesApiController implements ProfilesApi {
     }
 
     public ResponseEntity<List<UserProfile>> getAllUserProfileById(
-            @Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = true) User sessionUserCookie) {
+            @Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = false) User sessionUserCookie) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
@@ -87,8 +87,8 @@ public class ProfilesApiController implements ProfilesApi {
     }
 
 
-    public ResponseEntity<UserProfile> getUserProfileById(@Parameter(in = ParameterIn.PATH, description = "El id del profile de user que se desea buscar.", required = true, schema = @Schema()) @PathVariable("idProfile") Long idProfile
-            , @Parameter(in = ParameterIn.COOKIE, description = "", required = true, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = true) User sessionUserCookie) {
+    public ResponseEntity<UserProfile> getUserProfileById(@Parameter(in = ParameterIn.PATH, description = "El id del profile de user que se desea buscar.", required = false, schema = @Schema()) @PathVariable("idProfile") Long idProfile
+            , @Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "SessionUserCookie", required = false) User sessionUserCookie) {
         String accept = request.getHeader("Accept");
         if (accept != null && accept.contains("application/json")) {
             try {
@@ -117,7 +117,7 @@ public class ProfilesApiController implements ProfilesApi {
         return new ResponseEntity<UserProfile>(HttpStatus.NOT_IMPLEMENTED);
     }
 
-    public ResponseEntity<UserProfile> putUserProfileById(@Parameter(in = ParameterIn.PATH, description = "El id del profile de user que se desea eliminar.", required = true, schema = @Schema()) @PathVariable("idProfile") Long idProfile
+    public ResponseEntity<UserProfile> putUserProfileById(@Parameter(in = ParameterIn.PATH, description = "El id del profile de user que se desea eliminar.", required = false, schema = @Schema()) @PathVariable("idProfile") Long idProfile
             ,
                                                           @Parameter(in = ParameterIn.COOKIE, description = "", required = false, schema = @Schema()) @CookieValue(value = "User", required = false) User sessionUserCookie, @Parameter(in = ParameterIn.DEFAULT, description = "", schema = @Schema()) @Valid @RequestBody UserProfile body
     ) {

@@ -47,7 +47,7 @@ public class UserProfile {
      * @return idProfile
      **/
 
-    @Schema(example = "1", required = true, description = "")
+    @Schema(example = "1", required = false, description = "")
 
     public Long getIdProfile() {
         return idProfile;
@@ -71,7 +71,7 @@ public class UserProfile {
      * @return idUser
      **/
 
-    @Schema(example = "1", required = true, description = "Id del user al que pertenece ese profile")
+    @Schema(example = "1", required = false, description = "Id del user al que pertenece ese profile")
 
     public Long getidUser() {
         return idUser;
@@ -95,7 +95,7 @@ public class UserProfile {
      * @return profileName
      **/
 
-    @Schema(example = "Pablito", required = true, description = "")
+    @Schema(example = "Pablito", required = false, description = "")
 
     public String getProfileName() {
         return profileName;
@@ -119,7 +119,7 @@ public class UserProfile {
      * @return pin
      **/
 
-    @Schema(example = "1234", required = true, description = "")
+    @Schema(example = "1234", required = false, description = "")
 
     public String getPin() {
         return pin;

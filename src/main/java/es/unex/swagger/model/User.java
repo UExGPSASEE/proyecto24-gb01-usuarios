@@ -94,7 +94,7 @@ public class User {
      * @return idUser
      **/
 
-    @Schema(example = "1", required = true, description = "")
+    @Schema(example = "1", required = false, description = "")
     public Long getIdUser() {
         return idUser;
     }
@@ -116,7 +116,7 @@ public class User {
      *
      * @return name
      **/
-    @Schema(example = "Pablo", required = true, description = "")
+    @Schema(example = "Pablo", required = false, description = "")
     public String getName() {
         return name;
     }
@@ -137,7 +137,7 @@ public class User {
      *
      * @return surname
      **/
-    @Schema(example = "Fernandez", required = true, description = "")
+    @Schema(example = "Fernandez", required = false, description = "")
     public String getSurname() {
         return surname;
     }
@@ -158,7 +158,7 @@ public class User {
      * @return username
      **/
 
-    @Schema(example = "pafernandez", required = true, description = "")
+    @Schema(example = "pafernandez", required = false, description = "")
     public String getUsername() {
         return username;
     }
@@ -178,7 +178,7 @@ public class User {
      *
      * @return email
      **/
-    @Schema(example = "pafernandez@gmail.com", required = true, description = "")
+    @Schema(example = "pafernandez@gmail.com", required = false, description = "")
 
     public String getEmail() {
         return email;
@@ -198,7 +198,7 @@ public class User {
      *
      * @return password
      **/
-    @Schema(example = "pafernandez", required = true, description = "")
+    @Schema(example = "pafernandez", required = false, description = "")
     public String getPassword() {
         return password;
     }
