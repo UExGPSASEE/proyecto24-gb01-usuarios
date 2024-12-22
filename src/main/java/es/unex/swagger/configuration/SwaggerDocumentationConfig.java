@@ -14,16 +14,16 @@ public class SwaggerDocumentationConfig {
     @Bean
     public OpenAPI openApi() {
         return new OpenAPI()
-            .info(new Info()
-                .title("Microservicios relacionados con el usuario")
-                .description("This is an example of using OAuth2 Application Flow in a specification to describe security to your API.")
-                .termsOfService("")
-                .version("1.0.0")
-                .license(new License()
-                    .name("")
-                    .url("http://unlicense.org"))
-                .contact(new io.swagger.v3.oas.models.info.Contact()
-                    .email("")));
+                .info(new Info()
+                        .title("Microservicios relacionados con el usuario")
+                        .description("This is an example of using OAuth2 Application Flow in a specification to describe security to your API.")
+                        .termsOfService("")
+                        .version("1.0.0")
+                        .license(new License()
+                                .name("")
+                                .url("http://unlicense.org"))
+                        .contact(new io.swagger.v3.oas.models.info.Contact()
+                                .email("")));
     }
 
 }

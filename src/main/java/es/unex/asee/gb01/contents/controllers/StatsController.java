@@ -1,4 +1,5 @@
 package es.unex.asee.gb01.contents.controllers;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +16,13 @@ import java.util.List;
 @RequestMapping("/stats")
 public class StatsController {
 
-    @Autowired StatsClient statsClient;
+    StatsClient statsClient;
+
+    @Autowired
+    public StatsController(StatsClient statsClient) {
+        this.statsClient = statsClient;
+    }
+
 
     @GetMapping("/languages/{idLanguage}")
     public List<LanguageDTO> getLanguage(@PathVariable("idLanguage") Integer idLanguage) {
@@ -31,5 +38,5 @@ public class StatsController {
     public List<ReviewDTO> getReview(@PathVariable("idReview") Integer idReview) {
         return statsClient.getReview(idReview);
     }
-    
+
 }

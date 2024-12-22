@@ -6,8 +6,8 @@ public class ViewDTO {
     private long idProfile;
     private long idContent;
     private int typeContent;
-    
-    public ViewDTO(){
+
+    public ViewDTO() {
         this.idView = 0;
         this.isFinished = false;
         this.idProfile = 0;
@@ -62,5 +62,5 @@ public class ViewDTO {
     public void setTypeContent(int typeContent) {
         this.typeContent = typeContent;
     }
-    
+
 }

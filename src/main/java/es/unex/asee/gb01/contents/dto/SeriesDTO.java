@@ -4,7 +4,7 @@ public class SeriesDTO extends ContentDTO {
     private long idSeries;
     private int numSeasons;
 
-    public SeriesDTO(){
+    public SeriesDTO() {
         super();
         super.setContentType(ContentType.SERIES);
         this.numSeasons = 0;

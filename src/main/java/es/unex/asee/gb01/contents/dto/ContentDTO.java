@@ -28,7 +28,7 @@ public class ContentDTO {
         this.contentType = contentType;
     }
 
-    public int getContentTypeInt(){
+    public int getContentTypeInt() {
         return ContentType.toInt(contentType);
     }
 }

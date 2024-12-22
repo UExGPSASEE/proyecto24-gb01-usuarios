@@ -5,14 +5,14 @@ public class MovieDTO extends ContentDTO {
     private String urlVideo;
     private int duration;
 
-    public MovieDTO(){
+    public MovieDTO() {
         super();
         super.setContentType(ContentType.MOVIE);
         this.duration = 0;
         this.urlVideo = "";
     }
 
-    public MovieDTO(int idMovie, String title, String urlVideo, int duration) {
+    public MovieDTO(String title, String urlVideo, int duration) {
         super(title, ContentType.MOVIE);
         this.duration = duration;
         this.urlVideo = urlVideo;
@@ -41,5 +41,5 @@ public class MovieDTO extends ContentDTO {
     public void setDuration(int duration) {
         this.duration = duration;
     }
-    
+
 }
