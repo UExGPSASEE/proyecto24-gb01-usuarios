@@ -44,7 +44,7 @@ public class Subscription {
      *
      * @return idUser
      **/
-    @Schema(required = true, description = "")
+    @Schema(required = false, description = "")
     public Long getidUser() {
         return idUser;
     }
@@ -65,7 +65,7 @@ public class Subscription {
      *
      * @return idSubscription
      **/
-    @Schema(example = "1", required = true, description = "")
+    @Schema(example = "1", required = false, description = "")
     public Long getIdSubscription() {
         return idSubscription;
     }
@@ -86,7 +86,7 @@ public class Subscription {
      *
      * @return startDate
      **/
-    @Schema(example = "08/10/2022", required = true, description = "")
+    @Schema(example = "08/10/2022", required = false, description = "")
     public String getStartDate() {
         return startDate;
     }
