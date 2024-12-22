@@ -14,8 +14,8 @@ import java.util.List;
 @Service
 public class ContentService {
 
-    @Autowired private final ContentsClient contentsClient;
-
+    private final ContentsClient contentsClient;
+    @Autowired
     public ContentService(ContentsClient contentsClient) {
         this.contentsClient = contentsClient;
     }

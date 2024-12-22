@@ -4,7 +4,7 @@ public class LanguageDTO {
     private long idLanguage;
     private String name;
 
-    public LanguageDTO(){
+    public LanguageDTO() {
         this.idLanguage = 0;
         this.name = "";
     }

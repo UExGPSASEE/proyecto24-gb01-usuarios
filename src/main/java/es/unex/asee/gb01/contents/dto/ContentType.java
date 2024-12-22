@@ -29,7 +29,7 @@ public enum ContentType {
                 return 0;
         }
     }
-    
+
     public static ContentType fromInt(int type) {
         switch (type) {
             case 1:

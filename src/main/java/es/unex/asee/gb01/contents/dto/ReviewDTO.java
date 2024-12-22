@@ -6,7 +6,7 @@ public class ReviewDTO {
     private long idContent;
     private int typeContent;
 
-    public ReviewDTO(){
+    public ReviewDTO() {
         this.idReview = 0;
         this.rating = 0;
         this.idContent = 0;

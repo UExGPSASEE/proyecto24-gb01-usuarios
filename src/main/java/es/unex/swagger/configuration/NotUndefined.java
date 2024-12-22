@@ -10,6 +10,8 @@ import java.lang.annotation.*;
 @Constraint(validatedBy = NotUndefinedValidator.class)
 public @interface NotUndefined {
     String message() default "field cannot be undefined";
+
     Class<?>[] groups() default {};
+
     Class<? extends Payload>[] payload() default {};
 }

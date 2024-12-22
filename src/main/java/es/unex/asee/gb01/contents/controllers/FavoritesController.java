@@ -16,19 +16,25 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 
 
-
 @RestController
 @RequestMapping("/favorites")
 public class FavoritesController {
-    @Autowired FavoriteService favoriteService;
-    @Autowired FavoritesRepository favoritesRepository;
+    
+    FavoriteService favoriteService;
+    FavoritesRepository favoritesRepository;
+
+    @Autowired
+    public FavoritesController(FavoriteService favoriteService, FavoritesRepository favoritesRepository) {
+        this.favoriteService = favoriteService;
+        this.favoritesRepository = favoritesRepository;
+    }
 
     @GetMapping("")
     public Iterable<FavoriteEntity> getAllFavorites() {
         return favoriteService.getAllFavorites();
     }
 
-     @GetMapping("/{idUser}")
+    @GetMapping("/{idUser}")
     public Iterable<FavoriteEntity> getAllFavoritesByUser(@PathVariable long idUser) {
         return favoriteService.getAllFavoritesByUser(idUser);
     }
@@ -50,6 +56,6 @@ public class FavoritesController {
         favoriteService.removeFavorite(idUser, idFavorite);
         return ResponseEntity.noContent().build();
     }
-    
-    
+
+
 }
